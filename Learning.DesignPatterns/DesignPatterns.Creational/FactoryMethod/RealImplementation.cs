@@ -1,13 +1,13 @@
-﻿  using System;
-  using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 
-namespace DoFactory.GangOfFour.Factory.RealWorld
+namespace DesignPatterns.Creational.FactoryMethod
 {
   /// <summary>
   /// MainApp startup class for Real-World 
   /// Factory Method Design Pattern.
   /// </summary>
-  internal class MainApp
+  internal class RealMainApp
   {
     /// <summary>
     /// Entry point into console application.

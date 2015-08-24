@@ -46,11 +46,14 @@
     <Compile Include="FactoryMethod\BasicImplementation.cs" />
     <Compile Include="FactoryMethod\RealImplementation.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Prototype\BasicImplementation.cs" />
+    <Compile Include="Prototype\RealImplementation.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="AbstractFactory\abstract.gif" />
     <Content Include="Builder\builder.gif" />
     <Content Include="FactoryMethod\factory.gif" />
+    <Content Include="Prototype\prototype.gif" />
   </ItemGroup>
   <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

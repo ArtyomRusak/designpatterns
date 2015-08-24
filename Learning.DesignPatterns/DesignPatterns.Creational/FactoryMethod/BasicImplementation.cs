@@ -1,6 +1,6 @@
 ﻿  using System;
 
-namespace DoFactory.GangOfFour.Factory.Structural
+namespace DesignPatterns.Creational.FactoryMethod
 {
   /// <summary>
   /// MainApp startup class for Structural 
