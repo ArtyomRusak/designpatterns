@@ -43,11 +43,16 @@
     <Compile Include="AbstractFactory\RealImplementation.cs" />
     <Compile Include="Builder\BasicImplementation.cs" />
     <Compile Include="Builder\RealImplementation1.cs" />
+    <Compile Include="FactoryMethod\BasicImplementation.cs" />
+    <Compile Include="FactoryMethod\RealImplementation.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="AbstractFactory\abstract.gif" />
+    <Content Include="Builder\builder.gif" />
+    <Content Include="FactoryMethod\factory.gif" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
