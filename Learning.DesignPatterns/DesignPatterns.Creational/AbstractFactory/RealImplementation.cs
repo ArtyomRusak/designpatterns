@@ -2,147 +2,146 @@
 
 namespace DesignPatterns.Creational.AbstractFactory
 {
+  /// <summary>
+  /// MainApp startup class for Real-World
+  /// Abstract Factory Design Pattern.
+  /// </summary>
+  internal class RealMainApp
+  {
     /// <summary>
-    /// MainApp startup class for Real-World
-    /// Abstract Factory Design Pattern.
+    /// Entry point into console application.
     /// </summary>
-    internal class RealMainApp
+    public static void Main()
     {
-        /// <summary>
-        /// Entry point into console application.
-        /// </summary>
-        public static void Main()
-        {
-            // Create and run the African animal world
-            ContinentFactory africa = new AfricaFactory();
-            AnimalWorld world = new AnimalWorld(africa);
-            world.RunFoodChain();
+      // Create and run the African animal world
+      ContinentFactory africa = new AfricaFactory();
+      AnimalWorld world = new AnimalWorld(africa);
+      world.RunFoodChain();
 
-            // Create and run the American animal world
-            ContinentFactory america = new AmericaFactory();
-            world = new AnimalWorld(america);
-            world.RunFoodChain();
+      // Create and run the American animal world
+      ContinentFactory america = new AmericaFactory();
+      world = new AnimalWorld(america);
+      world.RunFoodChain();
 
-            // Wait for user input
-            Console.ReadKey();
-        }
+      // Wait for user input
+      Console.ReadKey();
+    }
+  }
+
+
+  /// <summary>
+  /// The 'AbstractFactory' abstract class
+  /// </summary>
+  internal abstract class ContinentFactory
+  {
+    public abstract Herbivore CreateHerbivore();
+
+    public abstract Carnivore CreateCarnivore();
+  }
+
+  /// <summary>
+  /// The 'ConcreteFactory1' class
+  /// </summary>
+  internal class AfricaFactory : ContinentFactory
+  {
+    public override Herbivore CreateHerbivore()
+    {
+      return new Wildebeest();
     }
 
-
-    /// <summary>
-    /// The 'AbstractFactory' abstract class
-    /// </summary>
-    internal abstract class ContinentFactory
+    public override Carnivore CreateCarnivore()
     {
-        public abstract Herbivore CreateHerbivore();
-        public abstract Carnivore CreateCarnivore();
+      return new Lion();
+    }
+  }
+
+  /// <summary>
+  /// The 'ConcreteFactory2' class
+  /// </summary>
+  internal class AmericaFactory : ContinentFactory
+  {
+    public override Herbivore CreateHerbivore()
+    {
+      return new Bison();
     }
 
-    /// <summary>
-    /// The 'ConcreteFactory1' class
-    /// </summary>
-    internal class AfricaFactory : ContinentFactory
+    public override Carnivore CreateCarnivore()
     {
-        public override Herbivore CreateHerbivore()
-        {
-            return new Wildebeest();
-        }
+      return new Wolf();
+    }
+  }
 
-        public override Carnivore CreateCarnivore()
-        {
-            return new Lion();
-        }
+  /// <summary>
+  /// The 'AbstractProductA' abstract class
+  /// </summary>
+  internal abstract class Herbivore
+  {
+  }
+
+  /// <summary>
+  /// The 'AbstractProductB' abstract class
+  /// </summary>
+  internal abstract class Carnivore
+  {
+    public abstract void Eat(Herbivore h);
+  }
+
+  /// <summary>
+  /// The 'ProductA1' class
+  /// </summary>
+  internal class Wildebeest : Herbivore
+  {
+  }
+
+  /// <summary>
+  /// The 'ProductB1' class
+  /// </summary>
+  internal class Lion : Carnivore
+  {
+    public override void Eat(Herbivore h)
+    {
+      // Eat Wildebeest
+      Console.WriteLine(this.GetType().Name + " eats " + h.GetType().Name);
+    }
+  }
+
+  /// <summary>
+  /// The 'ProductA2' class
+  /// </summary>
+  internal class Bison : Herbivore
+  {
+  }
+
+  /// <summary>
+  /// The 'ProductB2' class
+  /// </summary>
+  internal class Wolf : Carnivore
+  {
+    public override void Eat(Herbivore h)
+    {
+      // Eat Bison
+      Console.WriteLine(this.GetType().Name + " eats " + h.GetType().Name);
+    }
+  }
+
+  /// <summary>
+  /// The 'Client' class 
+  /// </summary>
+  internal class AnimalWorld
+  {
+    private Herbivore _herbivore;
+    private Carnivore _carnivore;
+
+    // Constructor
+    public AnimalWorld(ContinentFactory factory)
+    {
+      _carnivore = factory.CreateCarnivore();
+      _herbivore = factory.CreateHerbivore();
     }
 
-    /// <summary>
-    /// The 'ConcreteFactory2' class
-    /// </summary>
-    internal class AmericaFactory : ContinentFactory
+    public void RunFoodChain()
     {
-        public override Herbivore CreateHerbivore()
-        {
-            return new Bison();
-        }
-
-        public override Carnivore CreateCarnivore()
-        {
-            return new Wolf();
-        }
+      _carnivore.Eat(_herbivore);
     }
-
-    /// <summary>
-    /// The 'AbstractProductA' abstract class
-    /// </summary>
-    internal abstract class Herbivore
-    {
-    }
-
-    /// <summary>
-    /// The 'AbstractProductB' abstract class
-    /// </summary>
-    internal abstract class Carnivore
-    {
-        public abstract void Eat(Herbivore h);
-    }
-
-    /// <summary>
-    /// The 'ProductA1' class
-    /// </summary>
-    internal class Wildebeest : Herbivore
-    {
-    }
-
-    /// <summary>
-    /// The 'ProductB1' class
-    /// </summary>
-    internal class Lion : Carnivore
-    {
-        public override void Eat(Herbivore h)
-        {
-            // Eat Wildebeest
-            Console.WriteLine(this.GetType().Name +
-                              " eats " + h.GetType().Name);
-        }
-    }
-
-    /// <summary>
-    /// The 'ProductA2' class
-    /// </summary>
-    internal class Bison : Herbivore
-    {
-    }
-
-    /// <summary>
-    /// The 'ProductB2' class
-    /// </summary>
-    internal class Wolf : Carnivore
-    {
-        public override void Eat(Herbivore h)
-        {
-            // Eat Bison
-            Console.WriteLine(this.GetType().Name +
-                              " eats " + h.GetType().Name);
-        }
-    }
-
-    /// <summary>
-    /// The 'Client' class 
-    /// </summary>
-    internal class AnimalWorld
-    {
-        private Herbivore _herbivore;
-        private Carnivore _carnivore;
-
-        // Constructor
-        public AnimalWorld(ContinentFactory factory)
-        {
-            _carnivore = factory.CreateCarnivore();
-            _herbivore = factory.CreateHerbivore();
-        }
-
-        public void RunFoodChain()
-        {
-            _carnivore.Eat(_herbivore);
-        }
-    }
+  }
 }
