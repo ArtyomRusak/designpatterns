@@ -1,9 +1,11 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2013
-VisualStudioVersion = 12.0.21005.1
+VisualStudioVersion = 12.0.31101.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DesignPatterns.Creational", "DesignPatterns.Creational\DesignPatterns.Creational.csproj", "{94C4CE15-6D29-4B6F-AF43-B79DA5E33758}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DesignPatterns.Structural", "DesignPatterns.Structural\DesignPatterns.Structural.csproj", "{4DD84195-BD5D-4E90-87D1-7AACA9F1A26E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{94C4CE15-6D29-4B6F-AF43-B79DA5E33758}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{94C4CE15-6D29-4B6F-AF43-B79DA5E33758}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{94C4CE15-6D29-4B6F-AF43-B79DA5E33758}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4DD84195-BD5D-4E90-87D1-7AACA9F1A26E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4DD84195-BD5D-4E90-87D1-7AACA9F1A26E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4DD84195-BD5D-4E90-87D1-7AACA9F1A26E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4DD84195-BD5D-4E90-87D1-7AACA9F1A26E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
