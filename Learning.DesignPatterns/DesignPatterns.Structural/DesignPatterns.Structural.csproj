@@ -41,10 +41,13 @@
   <ItemGroup>
     <Compile Include="Adapter\BasicImplementation.cs" />
     <Compile Include="Adapter\RealImplementation.cs" />
+    <Compile Include="Bridge\BasicImplementation.cs" />
+    <Compile Include="Bridge\RealImplementation.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Adapter\adapter.gif" />
+    <Content Include="Bridge\bridge.gif" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
