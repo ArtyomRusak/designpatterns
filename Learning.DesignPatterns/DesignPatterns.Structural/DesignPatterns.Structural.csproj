@@ -45,12 +45,15 @@
     <Compile Include="Bridge\RealImplementation.cs" />
     <Compile Include="Composite\BasicImplementation.cs" />
     <Compile Include="Composite\RealImplementation.cs" />
+    <Compile Include="Decorator\BasicImplementation.cs" />
+    <Compile Include="Decorator\RealImplementation.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Adapter\adapter.gif" />
     <Content Include="Bridge\bridge.gif" />
     <Content Include="Composite\composite.gif" />
+    <Content Include="Decorator\decorator.gif" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
