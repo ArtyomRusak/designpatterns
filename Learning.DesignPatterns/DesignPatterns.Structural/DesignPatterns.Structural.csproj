@@ -49,6 +49,8 @@
     <Compile Include="Decorator\RealImplementation.cs" />
     <Compile Include="Facade\BasicImplementation.cs" />
     <Compile Include="Facade\RealImplementation.cs" />
+    <Compile Include="Flyweight\BasicImplementation.cs" />
+    <Compile Include="Flyweight\RealImplementation.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -57,6 +59,7 @@
     <Content Include="Composite\composite.gif" />
     <Content Include="Decorator\decorator.gif" />
     <Content Include="Facade\facade.gif" />
+    <Content Include="Flyweight\flyweight.gif" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
