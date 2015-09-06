@@ -1,13 +1,13 @@
-﻿  using System;
-  using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 
-namespace DoFactory.GangOfFour.Decorator.RealWorld
+namespace DesignPatterns.Structural.Decorator.Real
 {
   /// <summary>
   /// MainApp startup class for Real-World 
   /// Decorator Design Pattern.
   /// </summary>
-  internal class MainApp
+  internal class RealMainApp
   {
     /// <summary>
     /// Entry point into console application.
