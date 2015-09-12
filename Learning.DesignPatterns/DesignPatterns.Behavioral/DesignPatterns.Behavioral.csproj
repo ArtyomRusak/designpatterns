@@ -43,11 +43,14 @@
     <Compile Include="ChainOfResponsibility\RealImplementation.cs" />
     <Compile Include="Command\BasicImplementation.cs" />
     <Compile Include="Command\RealImplementation.cs" />
+    <Compile Include="Interpreter\BasicImplementation.cs" />
+    <Compile Include="Interpreter\RealImplementation.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="ChainOfResponsibility\chain.gif" />
     <Content Include="Command\command.gif" />
+    <Content Include="Interpreter\interpreter.gif" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
