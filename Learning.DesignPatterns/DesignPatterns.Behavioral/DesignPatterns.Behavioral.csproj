@@ -49,6 +49,8 @@
     <Compile Include="Iterator\RealImplementation.cs" />
     <Compile Include="Mediator\BasicImplementation.cs" />
     <Compile Include="Mediator\RealImplementation.cs" />
+    <Compile Include="Memento\BasicImplementation.cs" />
+    <Compile Include="Memento\RealImplementation.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -57,7 +59,9 @@
     <Content Include="Interpreter\interpreter.gif" />
     <Content Include="Iterator\iterator.gif" />
     <Content Include="Mediator\mediator.gif" />
+    <Content Include="Memento\memento.gif" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
