@@ -60,6 +60,8 @@
     <Compile Include="Strategy\RealImplementation.cs" />
     <Compile Include="TemplateMethod\BasicImplementation.cs" />
     <Compile Include="TemplateMethod\RealImplementation.cs" />
+    <Compile Include="Visitor\BasicImplementation.cs" />
+    <Compile Include="Visitor\RealImplementation.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="ChainOfResponsibility\chain.gif" />
