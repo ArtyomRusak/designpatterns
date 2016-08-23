@@ -54,6 +54,8 @@
     <Compile Include="Observer\BasicImplementation.cs" />
     <Compile Include="Observer\RealImplementation.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="State\BasicImplementation.cs" />
+    <Compile Include="State\RealImplementation.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="ChainOfResponsibility\chain.gif" />
@@ -63,6 +65,7 @@
     <Content Include="Mediator\mediator.gif" />
     <Content Include="Memento\memento.gif" />
     <Content Include="Observer\observer.gif" />
+    <Content Include="State\state.gif" />
   </ItemGroup>
   <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
