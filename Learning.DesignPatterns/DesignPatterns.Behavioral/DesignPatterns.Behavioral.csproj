@@ -58,6 +58,8 @@
     <Compile Include="State\RealImplementation.cs" />
     <Compile Include="Strategy\BasicImplementation.cs" />
     <Compile Include="Strategy\RealImplementation.cs" />
+    <Compile Include="TemplateMethod\BasicImplementation.cs" />
+    <Compile Include="TemplateMethod\RealImplementation.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="ChainOfResponsibility\chain.gif" />
@@ -69,6 +71,7 @@
     <Content Include="Observer\observer.gif" />
     <Content Include="State\state.gif" />
     <Content Include="Strategy\strategy.gif" />
+    <Content Include="TemplateMethod\template.gif" />
   </ItemGroup>
   <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
